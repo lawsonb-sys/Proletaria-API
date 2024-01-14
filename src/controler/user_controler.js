@@ -2,7 +2,7 @@ const fastify = require("fastify")();
 const User = require("../models/models");
 const creatoken = require("../middlewares/auth");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 async function getAllUser(request, reply) {
   try {
