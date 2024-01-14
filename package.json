@@ -2,12 +2,16 @@
   "name": "src",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --es-module-specifier-resolution=node ./src/app.js",
     "dev": "nodemon --es-module-specifier-resolution=node ./src/app.js"
   },
+  "deploy": true,
+  "branches": [
+    "master"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
