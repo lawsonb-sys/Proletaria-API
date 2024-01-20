@@ -14,7 +14,7 @@ mongoose
 //start my server
 fastify.register(userRoutes, { prefix: "/api/proletaria/users" });
 
-fastify.listen({ port: 1000 }, (err) => {
+fastify.listen({ port: process.env.PORT }, (err) => {
   if (err) {
     fastify.log.error(err);
     process.exit(1);
