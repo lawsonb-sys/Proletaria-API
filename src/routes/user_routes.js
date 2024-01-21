@@ -5,7 +5,6 @@ const user_controler = require("../controler/user_controler");
 
 async function routes(fastify, option) {
   fastify.get("/all", user_controler.getAllUser);
-
   fastify.get("/:id", user_controler.getById);
   fastify.get("/:id/images", user_controler.getimageById);
   fastify.post("/", user_controler.creatUser);
