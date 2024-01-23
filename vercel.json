@@ -1,9 +1,0 @@
-{
-  "buildCommand": "next build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "env": {
-    "PORT": "8080",
-    "MONGODB_URI": "mongodb+srv://lateralezk:labellevie@cluster0.bolcfp7.mongodb.net/proletariadb?retryWrites=true&w=majority"
-  }
-}
