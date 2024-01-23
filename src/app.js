@@ -12,7 +12,7 @@ mongoose
   .then(() => console.log("connect to database"))
   .catch((e) => console.log("error conection to database", e));
 //start my server
-fastify.register(userRoutes, { prefix: "/api/proletaria/users" });
+fastify.register(userRoutes, { prefix: "/api/users" });
 
 fastify.listen({ port: process.env.PORT }, (err) => {
   if (err) {
