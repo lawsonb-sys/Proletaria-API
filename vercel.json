@@ -1,3 +1,9 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/404.js" }]
+  "routes": [
+    {
+      "src": "/[^.]+",
+      "dest": "/",
+      "status": 200
+    }
+  ]
 }
